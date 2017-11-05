@@ -18,7 +18,7 @@ object GeneratorApp extends App {
 
   var ctr = 1
   val system = ActorSystem("system")
-  system.scheduler.schedule(0 second, 2 seconds){
+  system.scheduler.schedule(0 second, 1 seconds){
     val record1 = new ProducerRecord[String, String](Constants.firstInTopic, ctr.toString, "data from topic1 "+ctr)
     val record2 = new ProducerRecord[String, String](Constants.secondInTopic, ctr.toString, "data from topic2 "+ctr)
     val record3 = new ProducerRecord[String, String](Constants.thirdInTopic, ctr.toString, "data from topic3 "+ctr)
