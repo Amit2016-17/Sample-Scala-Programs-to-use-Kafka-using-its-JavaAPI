@@ -3,7 +3,9 @@
 This repository includes scala examples on using kafka. This project contains multiple main clases- one of them is 
 GeneratorApp which acts as Producer as it sends data to Kafka topic. Rest of them are consumers for different use cases.
 
-You can clone this project to your system and to run the code, type
+You can clone this project to your system using
+#### git clone https://github.com/ksimar/Sample-Scala-Programs-to-use-Kafka-using-its-JavaAPI.git
+and to run the code, type
 #### sbt run
 from the terminal at the project location. 
 
